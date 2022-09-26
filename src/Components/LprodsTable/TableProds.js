@@ -1,7 +1,7 @@
 import React from 'react'
 import './table.css'
 import { TableTr } from './TableTr';
-const TableProds = ({produits}) => {
+const TableProds = ({produits,fct}) => {
   return (
   
  <div>
@@ -19,7 +19,7 @@ const TableProds = ({produits}) => {
       </thead>
       <tbody>
        {
-        produits.map(el=><TableTr key={el.id} el={el} /> )
+        produits.map(el=><TableTr key={el.id} el={el} fct={fct} /> )
        }
        
       </tbody><tbody>

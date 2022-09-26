@@ -1,11 +1,12 @@
 import React from 'react'
 
-export const TableTr = ({el}) => {
+export const TableTr = ({el,fct}) => {
   
   return (
     <tr>
           <td>
-            <button>add</button>
+            <button onClick={()=>fct(el.title)}
+            >add</button>
           </td>
           <td>{el.title}</td>
           <td>

@@ -29,7 +29,7 @@
  }));
  
  export function  ProductCard({prodprops:{category,description,image,price,rating,title}}) {
- console.log(rating)
+//  console.log(rating)
    const [expanded, setExpanded] = React.useState(false);
  
    const handleExpandClick = () => {
